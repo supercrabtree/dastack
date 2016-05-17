@@ -36,16 +36,19 @@ module.exports = function dastack() {
         return this;
       }
     },
+
     pop: {
       value: function () {
         return dataStore.pop();
       }
     },
+
     peek: {
       value: function () {
         return dataStore[dataStore.length-1];
       }
     },
+
     clear: {
       value: function () {
         while (dataStore.length) {
@@ -54,15 +57,18 @@ module.exports = function dastack() {
         return this;
       }
     },
+
     toString: {
       value: function () {
         return dataStore.toString();
       }
     },
+
     toArray: {
       value: function () {
         return dataStore.slice();
       }
     }
+
   });
 };
