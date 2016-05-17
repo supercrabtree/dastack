@@ -30,3 +30,12 @@ test('stack.pop', t => {
   t.is(popped, 'banana');
 
 });
+
+test('stack.peep', t => {
+
+  var stack = createStack();
+  stack.push('banana');
+  var peeked = stack.peek();
+  t.is(peeked, 'banana');
+
+});
