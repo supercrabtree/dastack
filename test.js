@@ -22,3 +22,11 @@ test('stack.push', t => {
 
 });
 
+test('stack.pop', t => {
+
+  var stack = createStack();
+  stack.push('banana');
+  var popped = stack.pop();
+  t.is(popped, 'banana');
+
+});
