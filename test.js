@@ -4,6 +4,12 @@ import createStack from './';
 console.log();
 console.log(Date.now());
 
-test(t => {
+test('stack creation', t => {
+
+  var stack = createStack();
+  t.is(stack.size, 0);
+
+  var stack2 = createStack(1, 2, 3);
+  t.is(stack2.size, 3);
 
 });
