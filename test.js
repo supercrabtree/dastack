@@ -39,3 +39,12 @@ test('stack.peep', t => {
   t.is(peeked, 'banana');
 
 });
+
+test('stack.clear', t => {
+
+  var stack = createStack(1, 2, 'you');
+  stack.push('banana');
+  stack.clear();
+  t.is(stack.size, 0);
+
+});
