@@ -1,6 +1,6 @@
 {
   "name": "dastack",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a clean implementation of a stack written in straight simple es5",
   "main": "index.js",
   "scripts": {
