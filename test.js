@@ -48,3 +48,11 @@ test('stack.clear', t => {
   t.is(stack.size, 0);
 
 });
+
+test('stack.toString', t => {
+
+  var stack = createStack(1, 2, 'you', 'banana');
+  t.is(stack.toString(), '1,2,you,banana');
+
+});
+
