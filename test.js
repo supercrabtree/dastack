@@ -13,3 +13,12 @@ test('stack creation', t => {
   t.is(stack2.size, 3);
 
 });
+
+test('stack.push', t => {
+
+  var stack = createStack();
+  stack.push('banana');
+  t.is(stack.size, 1);
+
+});
+
