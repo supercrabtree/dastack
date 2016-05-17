@@ -1,7 +1,7 @@
 # dastack [![Build Status](https://travis-ci.org/supercrabtree/dastack.svg?branch=master)](https://travis-ci.org/supercrabtree/dastack)
 
 All of the implementations of stacks I found attached everything to the
-`prototype` and didn't make good of private encapsulation, getters,
+`prototype` and didn't make good use of private encapsulation, getters,
 non-enumerable methods, etc.
 
 So here it is, a clean implementation of a stack written in straight simple
@@ -30,7 +30,7 @@ var stack = createStack(1, 2, 3);
 stack.size // => 3
 ```
 
-#### stack.push
+#### stack.push()
 
 Add a new element to the top of the stack.
 
@@ -40,7 +40,7 @@ var stack2 = createStack(1, 2, 3);
 stack.size // => 3
 ```
 
-#### stack.pop
+#### stack.pop()
 
 Remove the top element from the top of the stack.
 
@@ -52,7 +52,7 @@ stack.pop() // => 3
 stack.size // => 2
 ```
 
-#### stack.peek
+#### stack.peek()
 
 Get the top element from the top of the stack, but do not remove it.
 
@@ -64,7 +64,7 @@ stack.peek() // => 3
 stack.size // => 3
 ```
 
-#### stack.clear
+#### stack.clear()
 
 Empty the stack.
 
@@ -76,7 +76,7 @@ stack.clear()
 stack.size // => 0
 ```
 
-#### stack.toString
+#### stack.toString()
 
 Get the current stack as a string.
 
@@ -86,7 +86,7 @@ var stack = createStack(1, 2, 3);
 stack.toString() // => "1,2,3"
 ```
 
-#### stack.toArray
+#### stack.toArray()
 
 Copy the current stack into a regular array.
 
