@@ -56,3 +56,11 @@ test('stack.toString', t => {
 
 });
 
+test('stack.toArray', t => {
+
+  var stack = createStack(1, 2, 'you', 'banana');
+  stack.push('hat');
+  t.deepEqual(stack.toArray(), [1, 2, 'you', 'banana', 'hat']);
+
+});
+
