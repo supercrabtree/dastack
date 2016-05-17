@@ -1,0 +1,25 @@
+{
+  "name": "dastack",
+  "version": "0.0.0",
+  "description": "Stack data structure in js",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "watch": "ava --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supercrabtree/dastack.git"
+  },
+  "keywords": [
+    "stack",
+    "data",
+    "structure"
+  ],
+  "author": "George Crabtree <supercrabtree@googlemail.com> (https://github.com/supercrabtree)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/supercrabtree/dastack/issues"
+  },
+  "homepage": "https://github.com/supercrabtree/dastack#readme"
+}
