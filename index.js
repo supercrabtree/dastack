@@ -51,6 +51,11 @@ module.exports = function dastack() {
 
     clear: {
       value: function () {
+
+        // popping them all out of the array is marginally
+        // less performant than just setting dataStore = []
+        // but prevents the memory leaks that could occur.
+
         while (dataStore.length) {
           dataStore.pop();
         }
