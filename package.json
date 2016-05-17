@@ -1,7 +1,7 @@
 {
   "name": "dastack",
   "version": "0.0.0",
-  "description": "Stack data structure in js",
+  "description": "a clean implementation of a stack written in straight simple es5",
   "main": "index.js",
   "scripts": {
     "test": "ava",
