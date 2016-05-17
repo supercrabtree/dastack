@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/supercrabtree/dastack/issues"
   },
-  "homepage": "https://github.com/supercrabtree/dastack#readme"
+  "homepage": "https://github.com/supercrabtree/dastack#readme",
+  "devDependencies": {
+    "ava": "0.14.0"
+  }
 }
