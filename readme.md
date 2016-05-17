@@ -1,4 +1,4 @@
-# dastack
+# dastack [![Build Status](https://travis-ci.org/supercrabtree/dastack.svg?branch=master)](https://travis-ci.org/supercrabtree/dastack)
 
 All of the implementations of stacks I found attached everything to the
 `prototype` and didn't make good of private encapsulation, getters,
