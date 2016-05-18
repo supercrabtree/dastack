@@ -4,7 +4,7 @@ import createStack from './';
 console.log();
 console.log(Date.now());
 
-test('stack creation', t => {
+test('stack.size', t => {
 
   var stack = createStack();
   t.is(stack.size, 0);
@@ -14,7 +14,7 @@ test('stack creation', t => {
 
 });
 
-test('stack.push', t => {
+test('stack.push()', t => {
 
   var stack = createStack();
   stack.push('banana');
@@ -22,7 +22,7 @@ test('stack.push', t => {
 
 });
 
-test('stack.pop', t => {
+test('stack.pop()', t => {
 
   var stack = createStack();
   stack.push('banana');
@@ -31,7 +31,7 @@ test('stack.pop', t => {
 
 });
 
-test('stack.peep', t => {
+test('stack.peep()', t => {
 
   var stack = createStack();
   stack.push('banana');
@@ -40,7 +40,7 @@ test('stack.peep', t => {
 
 });
 
-test('stack.clear', t => {
+test('stack.clear()', t => {
 
   var stack = createStack(1, 2, 'you');
   stack.push('banana');
@@ -49,14 +49,14 @@ test('stack.clear', t => {
 
 });
 
-test('stack.toString', t => {
+test('stack.toString()', t => {
 
   var stack = createStack(1, 2, 'you', 'banana');
   t.is(stack.toString(), '1,2,you,banana');
 
 });
 
-test('stack.toArray', t => {
+test('stack.toArray()', t => {
 
   var stack = createStack(1, 2, 'you', 'banana');
   stack.push('hat');
