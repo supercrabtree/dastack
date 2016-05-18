@@ -66,3 +66,12 @@ test('stack.toArray()', t => {
 
 });
 
+test('stack is immutable', t => {
+
+  var stack = createStack();
+  t.throws(() => stack.hat = 'yay');
+  t.throws(() => stack.push = 1);
+  t.throws(() => delete stack.push);
+
+});
+
