@@ -12,6 +12,8 @@ test('stack.size', t => {
   var stack2 = createStack(1, 2, 3);
   t.is(stack2.size, 3);
 
+  t.throws(() => stack.size = '1', Error, 'is readonly');
+
 });
 
 test('stack.push()', t => {
