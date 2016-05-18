@@ -15,9 +15,7 @@ module.exports = function dastack() {
     dataStore = [];
   }
 
-
-  return Object.create(null, {
-
+  var stack = Object.create(null, {
 
     // properties
 
@@ -33,7 +31,7 @@ module.exports = function dastack() {
     push: {
       value: function (item) {
         dataStore.push(item);
-        return this;
+        return stack;
       }
     },
 
@@ -59,7 +57,7 @@ module.exports = function dastack() {
         while (dataStore.length) {
           dataStore.pop();
         }
-        return this;
+        return stack;
       }
     },
 
@@ -76,4 +74,6 @@ module.exports = function dastack() {
     }
 
   });
+
+  return stack;
 };
