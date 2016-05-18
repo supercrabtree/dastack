@@ -15,65 +15,53 @@ module.exports = function dastack() {
     dataStore = [];
   }
 
-  var stack = Object.create(null, {
+
+  var stack = {
+
 
     // properties
 
-    size: {
-      get: function () {
-        return dataStore.length;
-      }
+    get size() {
+      return dataStore.length;
     },
 
 
     // methods
 
-    push: {
-      value: function (item) {
-        dataStore.push(item);
-        return stack;
-      }
+    push: function (item) {
+      dataStore.push(item);
+      return stack;
     },
 
-    pop: {
-      value: function () {
-        return dataStore.pop();
-      }
+    pop: function () {
+      return dataStore.pop();
     },
 
-    peek: {
-      value: function () {
-        return dataStore[dataStore.length-1];
-      }
+    peek: function () {
+      return dataStore[dataStore.length-1];
     },
 
-    clear: {
-      value: function () {
+    clear: function () {
 
-        // popping them all out of the array is marginally
-        // less performant than just setting dataStore = []
-        // but prevents the memory leaks that could occur.
+      // popping them all out of the array is marginally
+      // less performant than just setting dataStore = []
+      // but prevents the memory leaks that could occur.
 
-        while (dataStore.length) {
-          dataStore.pop();
-        }
-        return stack;
+      while (dataStore.length) {
+        dataStore.pop();
       }
+      return stack;
     },
 
-    toString: {
-      value: function () {
-        return dataStore.toString();
-      }
+    toString: function () {
+      return dataStore.toString();
     },
 
-    toArray: {
-      value: function () {
-        return dataStore.slice();
-      }
+    toArray: function () {
+      return dataStore.slice();
     }
+  };
 
-  });
-
-  return stack;
+  return Object.freeze(stack);
 };
+
